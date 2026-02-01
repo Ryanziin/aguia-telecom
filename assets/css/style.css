@@ -35,6 +35,125 @@ body::before {
 }
 
 /**
+ * Conteúdo do Cabeçalho
+ */
+
+.site-header {
+    position: relative;
+    z-index: 10;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(8px);
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+}
+
+.hero-section .text-muted {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.hero-card {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+}
+
+.hero-card i {
+    color: #25d366;
+}
+
+.hero-card p {
+    font-size: 0.95rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero-card {
+        padding: 24px;
+    }
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+
+
+/**
+ * Conteúdo da Página
+ */
+
+.contact-section {
+    background: transparent;
+}
+
+.contact-section h2 {
+    color: #fff;
+}
+
+.contact-section .text-muted {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.info-card {
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 32px 24px;
+    text-align: center;
+    color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info-card i {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.info-card h5 {
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.info-card p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.info-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+
+.benefits-section h2 {
+    color: #fff;
+}
+
+.benefits-section .text-muted {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.benefits-section .info-card i {
+    color: #ff3b3b;
+}
+
+/**
  * Conteúdo do Rodapé
  */
 
